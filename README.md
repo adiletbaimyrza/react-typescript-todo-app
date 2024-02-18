@@ -1,30 +1,48 @@
 # TODO App: React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple TODO app that supports [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations and utilizes LocalStorage to preserve user data. Written in TypeScript language using React framework, built with Vite and deployed to Github Pages. You can see live demo [here](https://adiletbaimyrza.github.io/react-typescript-todo-app/).
 
-Currently, two official plugins are available:
+![App Screenshot](./blob/app-screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##
 
-## Expanding the ESLint configuration
+If you wonder how to deploy a Vite project to Github Pages, check out this [article](https://medium.com/@aishwaryaparab1/deploying-vite-deploying-vite-app-to-github-pages-166fff40ffd3).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Run locally
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+git clone https://github.com/adiletbaimyrza/react-typescript-todo-app.git
+cd react-typescript-todo-app
+npm install
+npm run dev
+```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname
-  }
+## Recommendations
+
+1. Create a **.vscode** folder in your root directory and create **settings.json** file inside **.vscode**. Like so:
+
+```bash
+├───.vscode
+|   └───settings.json
+├───public
+└───src
+    ├───assets
+    └───components
+```
+
+and paste this inside **settings.json**. This will enable you to apply formating when you save ts, tsx files in accordance with **.prettierrc** config file and **eslintrc.cjs**.
+
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.probe": ["typescript", "typescriptreact", "tsx", "ts"],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Change the "homepage" key in **package.json** to your own username and repository name:
+
+```json
+"homepage": "https://{username}.github.io/{repository-name}/",
+```
