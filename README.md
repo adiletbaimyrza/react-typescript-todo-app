@@ -30,7 +30,7 @@ npm run dev
     └───components
 ```
 
-and paste this inside **settings.json**. This will enable you to apply formating when you save ts, tsx files in accordance with **.prettierrc** config file and **eslintrc.cjs**.
+and copy&paste this code below inside **settings.json**. This will enable you to apply formating when you save ts, tsx files in accordance with **.prettierrc** config file and **eslintrc.cjs**.
 
 ```json
 {
@@ -41,7 +41,7 @@ and paste this inside **settings.json**. This will enable you to apply formating
 }
 ```
 
-2. Change the "homepage" key in **package.json** to your own username and repository name:
+2. Change the "homepage" key in **package.json** to your own username and repository name, if you want to deploy the application to GitHub Pages and follow instructions indicated in the article above.
 
 ```json
 "homepage": "https://{username}.github.io/{repository-name}/",
