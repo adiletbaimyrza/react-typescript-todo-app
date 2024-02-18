@@ -46,3 +46,7 @@ and copy&paste this code below inside **settings.json**. This will enable you to
 ```json
 "homepage": "https://{username}.github.io/{repository-name}/",
 ```
+
+#
+
+[MIT LICENSE](https://github.com/adiletbaimyrza/react-typescript-todo-app/blob/master/LICENSE)
