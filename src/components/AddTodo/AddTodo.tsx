@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AddTodoProps } from '../App.types'
+import { AddTodoProps } from '../../App.types'
 import { v4 as uuidv4 } from 'uuid'
 
 const AddTodo = ({ onAdd }: AddTodoProps) => {
