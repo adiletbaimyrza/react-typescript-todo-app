@@ -1,5 +1,5 @@
-import Todo from './Todo'
+import Todo from './Todo/Todo'
 import AddTodo from './AddTodo/AddTodo'
-import Layout from './Layout'
+import Layout from './Layout/Layout'
 
 export { Todo, AddTodo, Layout }

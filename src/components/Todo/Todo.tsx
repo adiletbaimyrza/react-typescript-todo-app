@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { TodoProps } from '../App.types'
-import '../index.css'
+import { TodoProps } from '../../App.types'
+import '../../index.css'
 
 const Todo = ({
   id,
