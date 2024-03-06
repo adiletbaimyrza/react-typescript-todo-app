@@ -1,4 +1,4 @@
-import { LayoutProps } from '../App.types'
+import { LayoutProps } from '../../App.types'
 import todoIcon from '../assets/todo.svg'
 
 const Layout = ({ children }: LayoutProps) => {
