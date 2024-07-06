@@ -11,6 +11,7 @@ export type TodoProps = {
   onComplete: (id: string) => void
   onEdit: (id: string, content: string) => void
   onDelete: (id: string) => void
+  onUndo: (id: string) => void
 }
 
 export type LayoutProps = {

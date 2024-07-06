@@ -1,5 +1,3 @@
-import Todo from './Todo/Todo'
-import AddTodo from './AddTodo/AddTodo'
-import Layout from './Layout/Layout'
-
-export { Todo, AddTodo, Layout }
+export { default as AddTodo } from './AddTodo'
+export { default as Layout } from './Layout'
+export { default as Todo } from './Todo'

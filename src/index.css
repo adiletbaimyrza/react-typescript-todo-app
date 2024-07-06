@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
-  background-color: #222222;
-  color: #fff;
+  background-color: theme('colors.bg');
+  color: theme('colors.text');
 }
+
+/* Dark mode styles */
+html.dark {
+  background-color: theme('colors.darkBg');
+  color: theme('colors.darkText');
+}
+
 @media screen and (max-width: 500px) {
   html {
     font-size: 12px;
@@ -9,191 +22,10 @@ html {
 }
 
 #root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  @apply font-montserrat mx-auto flex flex-col min-h-screen px-4; /* Apply Tailwind CSS classes */
   max-width: 700px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
-.main {
-  flex-grow: 1;
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
-
-h3 {
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.todo-icon {
-  height: 2.3rem;
-  width: 2.3rem;
-  margin-right: 1rem;
-}
-
-.add-todo {
-  display: flex;
-  margin-bottom: 1rem;
-  background-color: #333333;
-  padding: 1rem;
-  border-radius: 0.8rem;
-}
-
-.input-add-todo {
-  flex-grow: 1;
-  margin-right: 1rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #333333;
-  color: inherit;
-  border: 1px solid #7e7e7e;
-}
-.input-add-todo:focus {
-  background-color: #404040;
-  outline-color: #d59317;
-  outline-width: 2px;
-  outline-style: solid;
-}
-.input-add-todo:hover {
-  background-color: #404040;
-  cursor: text;
-}
-.input-add-todo::-moz-placeholder {
-  color: #808080;
-}
-.input-add-todo::placeholder {
-  color: #808080;
-}
-
-.input-add-button {
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  box-shadow: 1px 1px 3px #272727;
-}
-.input-add-button:hover {
-  cursor: pointer;
-}
-
-.todo-container {
-  display: flex;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 0.8rem;
-  background-color: #333333;
-}
-
-.content {
-  flex-grow: 1;
-  margin-right: 1rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #333333;
-  color: inherit;
-  border: none;
-  overflow-wrap: anywhere;
-  display: flex;
-  align-items: center;
-}
-.content:focus {
-  background-color: #404040;
-  outline-color: #d59317;
-  outline-width: 2px;
-  outline-style: solid;
-}
-.content:hover {
-  background-color: #404040;
-  cursor: text;
-}
-.content::-moz-placeholder {
-  color: #808080;
-}
-.content::placeholder {
-  color: #808080;
-}
-
-.line-through {
-  text-decoration: line-through;
-}
-
-.button {
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  box-shadow: 1px 1px 3px #272727;
-  margin-left: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-.button:hover {
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 500px) {
-  .controls {
-    flex-direction: column;
-    align-items: normal;
-  }
-}
-
-.no-task-placeholder {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.complete {
-  background-color: #7dff7d;
-}
-.complete:hover {
-  background-color: #31ac31;
-}
-
-.edit {
-  background-color: #ffff73;
-}
-.edit:hover {
-  background-color: #a9a92e;
-}
-
-.delete {
-  background-color: #ff7d7d;
-}
-.delete:hover {
-  background-color: #ae3333;
-}
-
-.submit {
-  background-color: #7dff7d;
-}
-.submit:hover {
-  background-color: #31ac31;
-}
-
-.add {
-  background-color: #7e7eff;
-}
-.add:hover {
-  background-color: #3e3ec3;
-}/*# sourceMappingURL=index.css.map */
