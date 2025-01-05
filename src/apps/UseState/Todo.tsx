@@ -1,9 +1,9 @@
 import { SquareCheck, SquarePen, SquarePlus, Trash2, Undo2 } from 'lucide-react'
 import { useState } from 'react'
-import { TodoProps } from '../types'
-import Button from './ui/Button'
-import Card from './ui/Card'
-import Textarea from './ui/Textarea'
+import { TodoProps } from '../../shared/types'
+import Button from '../../shared/ui/Button'
+import Card from '../../shared/ui/Card'
+import Textarea from '../../shared/ui/Textarea'
 
 const Todo = ({
   id,

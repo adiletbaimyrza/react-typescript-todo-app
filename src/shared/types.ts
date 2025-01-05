@@ -19,5 +19,5 @@ export type LayoutProps = {
 }
 
 export type AddTodoProps = {
-  onAdd: ({ id, content, completed }: TodoType) => void
+  onAdd: (todo: TodoType) => void
 }

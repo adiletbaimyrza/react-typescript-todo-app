@@ -1,10 +1,10 @@
 import { Plus } from 'lucide-react'
 import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import { AddTodoProps } from '../types'
-import Button from './ui/Button'
-import Card from './ui/Card'
-import Textarea from './ui/Textarea'
+import { AddTodoProps } from '../../shared/types'
+import Button from '../../shared/ui/Button'
+import Card from '../../shared/ui/Card'
+import Textarea from '../../shared/ui/Textarea'
 
 const AddTodo = ({ onAdd }: AddTodoProps) => {
   const [inputValue, setInputValue] = useState('')

@@ -1,5 +1,5 @@
 import { ClassValue } from 'clsx'
-import { cn } from '../../lib/utils'
+import { cn } from '../lib/utils'
 
 type Props = {
   className?: ClassValue

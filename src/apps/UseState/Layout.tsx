@@ -1,9 +1,9 @@
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import todoIcon from '../assets/todo.svg'
-import { LayoutProps } from '../types'
-import Button from './ui/Button'
-import Card from './ui/Card'
+import todoIcon from '../../assets/todo.svg'
+import { LayoutProps } from '../../shared/types'
+import Button from '../../shared/ui/Button'
+import Card from '../../shared/ui/Card'
 
 const ThemeSwitcher = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
