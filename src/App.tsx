@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router'
 import Redux from './apps/Redux'
 import { store } from './apps/Redux/store'
 import UseState from './apps/UseState'
+import Zustand from './apps/Zustand'
 
 const routes = [
   { path: '/', element: <UseState /> },
@@ -16,6 +17,7 @@ const routes = [
       </Provider>
     ),
   },
+  { path: '/zustand', element: <Zustand /> },
 ]
 
 const App: React.FC = () => {
