@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import AddTodo from './components/AddTodo'
-import Todo from './components/Todo'
 import Layout from './components/Layout'
+import Todo from './components/Todo'
 import { TodoType } from './types'
 
 function App() {
