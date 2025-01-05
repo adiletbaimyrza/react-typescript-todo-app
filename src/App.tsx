@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import { AddTodo, Todo, Layout } from './components'
+import AddTodo from './components/AddTodo'
+import Todo from './components/Todo'
+import Layout from './components/Layout'
 import { TodoType } from './types'
 
 function App() {
@@ -22,12 +24,16 @@ function App() {
   }
 
   const editHandler = (id: string, content: string) => {
-    const newTodoList = todoList.map((todo) =>
-      todo.id === id ? { ...todo, content: content } : todo
-    )
-    setTodoList(newTodoList)
+    if (content.length === 0) {
+      deleteHandler(id)
+    } else {
+      const newTodoList = todoList.map((todo) =>
+        todo.id === id ? { ...todo, content: content } : todo
+      )
+      setTodoList(newTodoList)
 
-    localStorage.setItem('todoList', JSON.stringify(newTodoList))
+      localStorage.setItem('todoList', JSON.stringify(newTodoList))
+    }
   }
 
   const deleteHandler = (id: string) => {

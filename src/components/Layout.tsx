@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Moon, Sun } from 'lucide-react'
-import { Button, Card } from './ui'
+import Card from './ui/Card'
+import Button from './ui/Button'
 import { LayoutProps } from '../types'
 import todoIcon from '../assets/todo.svg'
 

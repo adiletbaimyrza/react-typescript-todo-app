@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import { Button, Card, Textarea } from './ui'
+import Card from './ui/Card'
+import Button from './ui/Button'
+import Textarea from './ui/Textarea'
 import { TodoProps } from '../types'
 import { Trash2, SquarePen, SquareCheck, SquarePlus, Undo2 } from 'lucide-react'
 

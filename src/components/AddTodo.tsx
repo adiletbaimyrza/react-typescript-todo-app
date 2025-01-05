@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import { Card, Button, Textarea } from './ui'
+import Card from './ui/Card'
+import Button from './ui/Button'
+import Textarea from './ui/Textarea'
 import { AddTodoProps } from '../types'
 import { Plus } from 'lucide-react'
 
